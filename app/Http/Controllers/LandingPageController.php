@@ -2,17 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Sim;
+use App\Models\Post;
+
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
 {
     public function index()
     {
-        // Ambil semua data SIM dari database
-        $sims = Sim::all();
+        $posts = Post::published()->latest()->take(6)->get(); // misalnya 6 artikel terbaru
+        return view('home', compact('posts'));
+    }
 
-        // Kirim data ke view
-        return view('home', compact('sims'));
+    public function show($slug)
+    {
+        $post = Post::published()->where('slug', $slug)->firstOrFail();
+        return view('posts.show', compact('post'));
     }
 }

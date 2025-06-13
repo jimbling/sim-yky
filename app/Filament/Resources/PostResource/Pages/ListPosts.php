@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\SimResource\Pages;
+namespace App\Filament\Resources\PostResource\Pages;
 
-use App\Filament\Resources\SimResource;
+use App\Filament\Resources\PostResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 
-class ListSims extends ListRecords
+class ListPosts extends ListRecords
 {
-    protected static string $resource = SimResource::class;
+    protected static string $resource = PostResource::class;
 
     protected function getHeaderActions(): array
     {
