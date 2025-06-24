@@ -52,7 +52,7 @@
 
     <!-- CTA Button -->
     <div class="text-center mt-12" data-aos="fade-up">
-        <a href="#"
+        <a href="/pages/artikel"
             class="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition shadow-md hover:shadow-lg">
             Lihat Semua Artikel
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"

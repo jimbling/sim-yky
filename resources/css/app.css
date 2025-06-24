@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Untuk memastikan semua element tidak melebihi width parent */
+* {
+  max-width: 100%;
+}
+
+/* Khusus untuk elemen yang memerlukan overflow */
+.scroll-container {
+  overflow-x: auto;
+}
+
+/* Perbaikan untuk AOS */
+[data-aos] {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+

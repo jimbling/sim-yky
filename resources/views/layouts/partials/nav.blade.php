@@ -2,7 +2,7 @@
     <div class="container mx-auto px-6 py-3">
         <div class="flex items-center justify-between">
             <div class="flex items-center">
-                <a href="#" class="flex items-center">
+                <a href="/" class="flex items-center">
                     <div class="bg-primary p-2 rounded-lg mr-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
@@ -15,11 +15,11 @@
             </div>
 
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#fitur" class="nav-link text-gray-600 hover:text-primary font-medium">Fitur</a>
-                <a href="#layanan" class="nav-link text-gray-600 hover:text-primary font-medium">Layanan</a>
-                <a href="#siesde" class="nav-link text-gray-600 hover:text-primary font-medium">SIESDE</a>
-                <a href="#harga" class="nav-link text-gray-600 hover:text-primary font-medium">Harga</a>
-                <a href="#artikel" class="nav-link text-gray-600 hover:text-primary font-medium">Artikel</a>
+                <a href="/" class="nav-link text-gray-600 hover:text-primary font-medium">Home</a>
+                <a href="/pages/artikel" class="nav-link text-gray-600 hover:text-primary font-medium">Artikel</a>
+                <a href="/tutorial" class="nav-link text-gray-600 hover:text-primary font-medium">Tutorial</a>
+                <a href="/pages/faq" class="nav-link text-gray-600 hover:text-primary font-medium">FAQ</a>
+
             </div>
 
             <div class="flex items-center space-x-4">

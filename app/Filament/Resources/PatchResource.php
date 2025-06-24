@@ -7,6 +7,7 @@ use Filament\Tables;
 use App\Models\Patch;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Toggle;
 use App\Models\SchoolRegistrationToken;
@@ -49,11 +50,18 @@ class PatchResource extends Resource
                         'application/zip',
                         'application/x-zip-compressed',
                         'multipart/x-zip',
-                        'application/octet-stream', // kadang digunakan browser tertentu
+                        'application/octet-stream',
                     ])
-                    ->maxSize(10240) // ukuran maksimal dalam KB (misal 10MB)
+                    ->maxSize(10240)
                     ->required()
-                    ->visibility('private'),
+                    ->visibility('private')
+                    ->getUploadedFileNameUsing(function ($file, callable $get) {
+                        $name = $get('name') ?? 'patch';
+                        $slug = Str::slug($name); // ubah jadi format-url
+                        $extension = $file->getClientOriginalExtension();
+                        return "{$slug}.{$extension}";
+                    }),
+
 
                 Toggle::make('is_public')
                     ->label('Untuk Semua Sekolah?')

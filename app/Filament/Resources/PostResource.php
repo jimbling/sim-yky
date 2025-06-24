@@ -52,6 +52,7 @@ class PostResource extends Resource
                 ->options([
                     'article' => 'Artikel',
                     'tutorial' => 'Tutorial',
+                    'pages' => 'Halaman',
                 ])
                 ->required(),
 

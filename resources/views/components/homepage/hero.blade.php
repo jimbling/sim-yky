@@ -1,4 +1,4 @@
-<div class="container mx-auto px-6 py-20 md:py-28 relative overflow-hidden">
+<div class="container mx-auto px-2 py-20 md:py-12 relative overflow-hidden">
 
     <!-- Floating elements with coordinated AOS -->
     <div class="absolute top-20 left-10 w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm floating" data-aos="zoom-in"
@@ -25,54 +25,71 @@
                 modern.
             </p>
 
-            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-up"
+            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4" data-aos="fade-up"
                 data-aos-delay="500">
                 <a href="#demo"
-                    class="px-6 py-3 bg-white text-primary font-medium rounded-lg hover:shadow-lg hover:bg-white/95 transition-all duration-300 transform hover:-translate-y-1 text-center">
+                    class="px-3 py-3 bg-white text-primary font-medium rounded-lg hover:shadow-lg hover:bg-white/95 transition-all duration-300 transform hover:-translate-y-1 text-center">
                     Coba Demo Gratis <i class="fas fa-arrow-right ml-2"></i>
                 </a>
-                <a href="#layanan"
-                    class="px-6 py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1 text-center">
-                    <i class="fas fa-play-circle mr-2"></i> Lihat Video
-                </a>
+
             </div>
         </div>
 
-        <!-- Image Content -->
+        <!-- Image Content - Revised with Illustration -->
         <div class="md:w-1/2 flex justify-center items-center" data-aos="fade-left" data-aos-duration="800"
             data-aos-delay="300">
-            <div class="relative max-w-lg">
-                <!-- Main Image with stronger shadow -->
-                <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.3)] overflow-hidden z-10 border border-white/20"
-                    data-aos="zoom-in" data-aos-delay="400">
-                    <img src="https://via.placeholder.com/600x400" alt="Dashboard Sinau CMS"
-                        class="rounded-xl border-2 border-white/30 w-full h-auto">
+            <div class="relative max-w-md lg:max-w-lg xl:max-w-xl">
+                <!-- Illustration Container with Glow Effect -->
+                <div class="relative z-10">
+                    <!-- Main Illustration with subtle floating animation -->
+                    <img src="https://sinaucms.web.id/storage/hero.svg" alt="Sinau CMS Illustration"
+                        class="w-full h-auto animate-float-slow transform transition-all duration-700 hover:scale-105"
+                        data-aos="zoom-in" data-aos-delay="400">
+
+                    <!-- Glow Effect Behind Illustration -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary/30 to-accent/30 rounded-full blur-2xl -z-10 opacity-70"
+                        style="top: 30%; left: 30%; width: 40%; height: 40%;"></div>
                 </div>
 
-                <!-- QR Code Badge with slight rotation -->
-                <div class="absolute -bottom-5 -left-5 bg-white/95 text-dark p-4 rounded-xl shadow-lg z-20 w-44 transform transition-all duration-300 hover:scale-105 hover:rotate-0 rotate-[-5deg] backdrop-blur-sm"
+                <!-- Floating Badges Around Illustration -->
+                <!-- QR Code Badge -->
+                <div class="absolute md:block hidden bottom-40 -left-20 bg-white/95 text-dark p-3 rounded-xl shadow-lg z-20 w-36 transform transition-all duration-300 hover:scale-105 hover:rotate-0 rotate-[-5deg] backdrop-blur-sm border border-white/20"
                     data-aos="fade-right" data-aos-delay="600">
                     <div class="flex items-center">
-                        <div class="bg-secondary p-2 rounded-lg mr-3">
-                            <i class="fas fa-qrcode text-white text-lg"></i>
+                        <div class="bg-secondary p-1.5 rounded-lg mr-2">
+                            <i class="fas fa-qrcode text-white text-sm"></i>
                         </div>
                         <div>
-                            <div class="text-sm font-semibold">Verifikasi QR</div>
-                            <div class="text-xs text-gray-500">Dokumen Siswa</div>
+                            <div class="text-xs font-semibold">Verifikasi QR</div>
+                            <div class="text-[0.65rem] text-gray-500">Dokumen Digital</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Website Badge with slight rotation -->
-                <div class="absolute -top-5 -right-5 bg-white/95 text-dark p-4 rounded-xl shadow-lg z-20 w-44 transform transition-all duration-300 hover:scale-105 hover:rotate-0 rotate-[5deg] backdrop-blur-sm"
+                <!-- Responsive Badge -->
+                <div class="absolute md:block hidden -top-5 -right-5 bg-white/95 text-dark p-3 rounded-xl shadow-lg z-20 w-36 transform transition-all duration-300 hover:scale-105 hover:rotate-0 rotate-[5deg] backdrop-blur-sm border border-white/20"
                     data-aos="fade-left" data-aos-delay="600">
                     <div class="flex items-center">
-                        <div class="bg-primary p-2 rounded-lg mr-3">
-                            <i class="fas fa-laptop-code text-white text-lg"></i>
+                        <div class="bg-primary p-1.5 rounded-lg mr-2">
+                            <i class="fas fa-mobile-alt text-white text-sm"></i>
                         </div>
                         <div>
-                            <div class="text-sm font-semibold">Website Sekolah</div>
-                            <div class="text-xs text-gray-500">Responsif & Modern</div>
+                            <div class="text-xs font-semibold">Responsif</div>
+                            <div class="text-[0.65rem] text-gray-500">Semua Perangkat</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Badge (Additional) -->
+                <div class="absolute md:block hidden top-1/3 -left-20 bg-white/95 text-dark p-3 rounded-xl shadow-lg z-20 w-36 transform transition-all duration-300 hover:scale-105 hover:rotate-0 rotate-[-8deg] backdrop-blur-sm border border-white/20"
+                    data-aos="fade-right" data-aos-delay="700">
+                    <div class="flex items-center">
+                        <div class="bg-accent p-1.5 rounded-lg mr-2">
+                            <i class="fas fa-cloud text-white text-sm"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold">Cloud Based</div>
+                            <div class="text-[0.65rem] text-gray-500">Akses Dimana Saja</div>
                         </div>
                     </div>
                 </div>
@@ -80,3 +97,22 @@
         </div>
     </div>
 </div>
+
+<!-- Custom Floating Animation -->
+<style>
+    @keyframes float-slow {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+
+    .animate-float-slow {
+        animation: float-slow 8s ease-in-out infinite;
+    }
+</style>

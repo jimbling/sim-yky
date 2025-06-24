@@ -8,7 +8,9 @@
           <!-- Navigation -->
           @include('layouts.partials.nav')
 
-
+          <main>
+              @yield('content') {{-- Ini tempat konten dari show.blade.php akan masuk --}}
+          </main>
 
           <!-- Footer -->
           @include('layouts.partials.footer')
